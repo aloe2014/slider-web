@@ -1,0 +1,34 @@
+.wfbox {
+  width: 533px;
+  height: 200px;
+  border: 1px solid #000;
+  margin: 100px auto;
+  position: relative;
+  overflow: hidden;
+}
+.wfbox:hover ul{
+  /* 在hover的时候让动画暂停 */
+  animation-play-state:paused;
+}
+.wfbox img{
+  display: block;
+}
+.wfbox ul {
+  width: 3198px;
+  height: 200px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  animation: wufeng 10s linear infinite;
+}
+@keyframes wufeng{
+  0%{
+    left: 0;
+  }
+  100%{
+    left: -2132px;
+  }
+}
+.wfbox ul li{
+  float: left;
+}
